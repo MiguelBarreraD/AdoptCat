@@ -1,0 +1,109 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+
+
+#menu {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+}
+
+#opciones { 
+    display: flex;
+    align-items: left;
+}
+
+#logo {
+    width: 150px;
+    height: 60px;
+}
+
+
+.botonesMenu {
+    margin: 5px;
+    padding: 0.5em;
+    margin-right: 15px;
+    font-size: 18px;
+    background-color: transparent; /* Fondo transparente */
+    color: black; /* Letra negra */
+    border: none; /* Sin bordes */
+    border-radius: 5px;
+    cursor: pointer;    
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+    height: 90%; /* Altura igual al contenedor */
+    width: 100%; /* Ancho igual al contenedor */
+    display: flex; /* Flexbox para centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Estilos al pasar el mouse por encima */
+.botonesMenu:hover {
+    background-color: #f5f5dc; /* Color beige al pasar el mouse */
+    color: #333; /* Cambiar color del texto al pasar el mouse */
+}
+
+.informacion {
+    font-size: 18px; /* Tamaño de fuente base */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7e8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el div en dos columnas de igual tamaño */
+    /* Espacio entre las columnas */
+}
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .parcial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .texto {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  #Adoptar {
+    font-size: 60px;
+  }
+  #gatito {
+    display: block; 
+    margin: 0 auto; 
+}

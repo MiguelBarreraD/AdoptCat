@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cute cat</title>
+  <link rel="icon" href="../../img/icon.png" type="image/svg+xml">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <script src="js/menu.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/grid.js"></script>
+</head>  
+<body>
+    <div id="menu">
+      <div class="logo">
+        <img src="../../img/logo.png" alt="Logo" id="logo">
+      </div>
+      <div id="opciones">
+        <button id="IrNosotros" class="botonesMenu"> Nosotros </button>
+        <button id="IrAdoptar"class="botonesMenu"> Adoptar</button>
+        <button id="IrApadrinar"class="botonesMenu"> Apadrinar</button>
+        <button id="IrDudas"class="botonesMenu"> Dudas</button>
+      </div>
+    </div>
+
+    <div class="grid-container" id="grid-container">
+      
+    </div>
+
+    <div class="popup" id="adoptionPopup">
+      <div class="popup-content">
+          <span class="close" onclick="closePopup('adoptionPopup')">&times;</span>
+          <div class="popup-data">
+              <h3>Datos de Adopción</h3>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre">
+              <label for="telefono">Teléfono:</label>
+              <input type="text" id="telefono">
+              <label for="ciudad">Ciudad de Residencia:</label>
+              <input type="text" id="ciudad">
+              <button class="adopt-button" onclick="adoptCatWithDetails()">Adoptar</button>
+          </div>
+      </div>
+  </div>
+
+</body>
+</html>
+

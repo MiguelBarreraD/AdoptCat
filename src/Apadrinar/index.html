@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cute cat</title>
+  <link rel="icon" href="../../img/icon.png" type="image/svg+xml">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <script src="js/menu.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/numbers.js"></script>
+</head>  
+<body>
+    <div id="menu">
+      <div class="logo">
+        <img src="../../img/logo.png" alt="Logo" id="logo">
+      </div>
+      <div id="opciones">
+        <button id="IrNosotros" class="botonesMenu"> Nosotros </button>
+        <button id="IrAdoptar"class="botonesMenu"> Adoptar</button>
+        <button id="IrApadrinar"class="botonesMenu"> Apadrinar</button>
+        <button id="IrDudas"class="botonesMenu"> Dudas</button>
+      </div>
+    </div>
+
+    <!-- Aqui van  los elementos del grid -->
+    <div class="grid-container">
+
+    </div>
+
+    <!-- Popup 1 -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+          <span class="close" onclick="closePopup('popup')">&times;</span>
+          <h2>Formulario de Consignación</h2>
+          <form>
+            <label for="nombre" id="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"  required maxlength="30"><br>
+            
+            <label for="banco">Banco:</label>
+            <select id="banco" name="banco">
+                <option value="banco1">Davivienda</option>
+                <option value="banco2">Bancolombia</option>
+                <option value="banco3">Banco de Bogota</option>
+                <option value="banco4">Banco Popular</option>
+                <option value="banco5">Banco AV Villas</option>
+            </select><br>
+
+            <label for="monto">Monto:</label>
+            <input type="text" id="monto" name="monto"  inputmode="numeric" required oninput="validateNumericInput(this)">
+            
+            <button type="button" id="botonAccion" onclick="donar()">Realizar Donación</button>
+        </form>        
+      </div>
+    </div>
+</body>
+</html>
+

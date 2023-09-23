@@ -1,0 +1,44 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+#menu {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+#opciones { 
+    display: flex;
+    align-items: left;
+}
+
+#logo {
+    width: 150px;
+    height: 60px;
+}
+
+/* Estilos para los botones */
+.botonesMenu {
+    margin: 5px;
+    padding: 0.5em;
+    margin-right: 15px;
+    font-size: 18px;
+    background-color: transparent; /* Fondo transparente */
+    color: black; /* Letra negra */
+    border: none; /* Sin bordes */
+    border-radius: 5px;
+    cursor: pointer;    
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+    height: 90%; /* Altura igual al contenedor */
+    width: 100%; /* Ancho igual al contenedor */
+    display: flex; /* Flexbox para centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Estilos al pasar el mouse por encima */
+.botonesMenu:hover {
+    background-color: #f5f5dc; /* Color beige al pasar el mouse */
+    color: #333; /* Cambiar color del texto al pasar el mouse */
+}

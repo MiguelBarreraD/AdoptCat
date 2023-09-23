@@ -1,0 +1,105 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+#menu {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+#opciones { 
+    display: flex;
+    align-items: left;
+}
+
+#logo {
+    width: 150px;
+    height: 60px;
+}
+
+/* Estilos para los botones */
+.botonesMenu {
+    margin: 5px;
+    padding: 0.5em;
+    margin-right: 15px;
+    font-size: 18px;
+    background-color: transparent; /* Fondo transparente */
+    color: black; /* Letra negra */
+    border: none; /* Sin bordes */
+    border-radius: 5px;
+    cursor: pointer;    
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+    height: 90%; /* Altura igual al contenedor */
+    width: 100%; /* Ancho igual al contenedor */
+    display: flex; /* Flexbox para centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Estilos al pasar el mouse por encima */
+.botonesMenu:hover {
+    background-color: #f5f5dc; /* Color beige al pasar el mouse */
+    color: #333; /* Cambiar color del texto al pasar el mouse */
+}
+
+/* Estilos pagina */
+header {
+    text-align: center;
+    background-color: #f5f5dc; /* Color beige claro para el fondo del encabezado */
+    padding: 20px; /* Añade un espacio interno alrededor del encabezado */
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px; /* Tamaño de fuente más grande */
+    color: #333; /* Cambia el color del texto a tu preferencia */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Efecto de sombra en el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    background-color: beige; /* Color de fondo beige */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.6s;
+}
+
+.box:hover {
+    background-color: #a9957b   ; /* Cambio de color a café al pasar el mouse */
+  }
+
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #f5f5dc;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
